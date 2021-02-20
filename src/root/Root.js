@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { Route } from 'react-router-dom';
+import LandingPage from '../LandingPage/LandingPage';
+import AdoptPage from '../AdoptPage/AdoptPage';
 
 function Root() {
-  return <div>
-    <h1>Petful</h1>
-  </div>
+  return (
+    <div>
+      <Route path={'/'} exact component={LandingPage} />
+      <Route path={'/adopt'} component={AdoptPage} />
+    </div>
+  );
 }
 
-export default Root
+export default Root;

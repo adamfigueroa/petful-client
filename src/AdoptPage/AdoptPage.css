@@ -1,0 +1,13 @@
+.adoptWindow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.animalCardBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
