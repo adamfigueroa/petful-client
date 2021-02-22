@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  background-color: #252046;
+  color: #fdfcff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Chewy', cursive;
+}

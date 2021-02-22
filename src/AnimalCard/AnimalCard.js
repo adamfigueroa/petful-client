@@ -15,14 +15,14 @@ class AnimalCard extends Component {
   };
   render() {
     return <div className="petCard">
-        <h3>Pet Name</h3>
-        <p>Image</p>
-        <div>
-            <p>Age</p>
-            <p>Breed</p>
-            <p>Gender</p>
-            <p>Description</p>
-            <p>Story</p>
+        <h2>{this.props.pet.name}</h2>
+        <img className='petImage' src={this.props.pet.imageURL} alt={this.props.pet.description} />
+        <div className='infoBox'>
+            <p>Age: {this.props.pet.age}</p>
+            <p>Gender: {this.props.pet.gender}</p>
+            <p>Breed: {this.props.pet.breed}</p>
+            <p>Description: {this.props.pet.description}</p>
+            <p>Story: {this.props.pet.story}</p>
         </div>
         <button>Adopt</button>
     </div>;

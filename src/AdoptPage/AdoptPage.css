@@ -1,13 +1,26 @@
+.headerBox {
+    display: flex;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.pLogo {
+    max-width: 50px;
+}
+
+.adoptTitle {
+    color: #FDFCFF;
+    font-size: 45px;
+    min-width: 100%;
+    min-height: 50px;
+    margin: 0px 0px 0px 20px;
+    padding-top: 15px;
+    text-align: left;
+}
+
 .adoptWindow {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.animalCardBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
 }

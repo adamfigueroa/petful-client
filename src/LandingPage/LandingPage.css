@@ -6,10 +6,27 @@
 }
 
 .title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
 }
 
-/* .landingBox {
+.landingBox {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #fdfcff;
+    color: black;
+    max-width: 75%;
+}
 
-} */
+a {
+    text-decoration: none;
+    background-color: #fdfcff;
+    padding: 10px 20px 10px 20px;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #7668B6;
+    color: #fdfcff;
+}
