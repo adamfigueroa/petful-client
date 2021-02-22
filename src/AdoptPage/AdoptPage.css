@@ -1,3 +1,5 @@
+/* --------------- Header --------------------- */
+
 .headerBox {
     display: flex;
     align-items: center;
@@ -17,6 +19,8 @@
     padding-top: 15px;
     text-align: left;
 }
+
+/* ---------------------------------- */
 
 .adoptWindow {
     display: flex;
