@@ -1,9 +1,9 @@
 # Petful Client
 
-Link to live app: https://petful-client-beige-three.vercel.app/
+- Link to live app: https://petful-client-beige-three.vercel.app/
 
-Link to live API: https://petful-server-challenge.herokuapp.com/
-Link to API Repo: https://github.com/adamfigueroa/petful-server
+- Link to live API: https://petful-server-challenge.herokuapp.com/
+- Link to API Repo: https://github.com/adamfigueroa/petful-server
 
 # About Petful
 
