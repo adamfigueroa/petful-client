@@ -1,6 +1,6 @@
 # Petful Client
 
-**Link to live app: **
+**Link to live app: https://petful-client-beige-three.vercel.app/**
 
 # About Petful
 
@@ -8,7 +8,7 @@ Petful is an app for a first in first out pet adoption agency. Users can join th
 
 # Screenshot
 
-
+![alt text](https://github.com/adamfigueroa/petful-client/blob/main/src/Images/petful-screenshot.png)
 
 # Technology used
 1. HTML as JSX
