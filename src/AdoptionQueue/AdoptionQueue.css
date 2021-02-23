@@ -1,0 +1,30 @@
+/* --------------- Queue Form Styling --------------------- */
+
+.queueFormBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.queueForm {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    min-height: 150px;
+}
+
+.submitBtn {
+    background-color: #fdfcff;
+    padding: 10px 20px 10px 20px;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+.submitBtn:hover {
+    background-color: #7668B6;
+    color: #fdfcff;
+}

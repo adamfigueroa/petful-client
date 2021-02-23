@@ -13,6 +13,7 @@
     padding: 15px;
     font-size: 18px;
     border-radius: 10px;
+    border: solid 4px black;
     background-color: #fdfcff;
     color: black;
     max-width: 75%;

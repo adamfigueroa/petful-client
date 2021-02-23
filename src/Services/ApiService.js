@@ -41,7 +41,7 @@ const ApiService = {
     return fetch(`${REACT_APP_API_BASE}/people`, {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ person: name })
+      body: JSON.stringify({ name: name })
     })
     .then((res) => {
       if (!res.ok) {

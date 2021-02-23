@@ -13,6 +13,7 @@
     padding: 10px;
     margin: 15px 5px 15px 5px;
     border-radius: 10px;
+    min-height: 600px;
     background-color: #564997;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -23,6 +24,7 @@
     padding: 10px;
     margin: 10px 0px 10px 0px;
     border-radius: 10px;
+    min-width: 80%;
     background-color: #fdfcff;
     color: black;
     box-shadow:
