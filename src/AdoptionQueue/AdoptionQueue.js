@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './AdoptionQueue.css'
+import './AdoptionQueue.css';
 
 class AdoptionQueue extends Component {
   render() {

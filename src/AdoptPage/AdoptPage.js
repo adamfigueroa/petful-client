@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import AnimalCard from '../AnimalCard/AnimalCard';
 import AdoptionQueue from '../AdoptionQueue/AdoptionQueue';
 import ApiService from '../Services/ApiService';
-import logo from './petful-icon.png';
+import logo from '../Images/petful-icon.png';
 import './AdoptPage.css';
 
 const queueNames = [
@@ -11,6 +11,15 @@ const queueNames = [
   'Jason Myerzonne',
   'Edith Rose',
   'Buddy the Elf',
+  'Harry Potter',
+  'Arnold Schwarzenegger',
+  'Sharon Stone',
+  'Rachel Ticotin',
+  'Linda Hamilton',
+  'Edward Furlong',
+  'Robert Patrick',
+  'Joe Morton',
+  'Alicia Vikander',
 ];
 
 class AdoptPage extends Component {
@@ -156,9 +165,9 @@ class AdoptPage extends Component {
 
   populateQueue = () => {
     this.interval = setInterval(() => {
-      let populateUsers = queueNames[Math.floor(Math.random() * queueNames.length)]
-      ApiService.queueUser(`${populateUsers}`)
-      .then(() => {
+      let populateUsers =
+        queueNames[Math.floor(Math.random() * queueNames.length)];
+      ApiService.queueUser(`${populateUsers}`).then(() => {
         ApiService.getPeople()
           .then((people) => {
             this.setState({ people });
@@ -197,19 +206,30 @@ class AdoptPage extends Component {
           />
         </div>
         <div className="queueFormBox">
-          <form className="queueForm" onSubmit={this.handleSubmit}>
-            <label htmlFor="nameInput">
-              Wanna join the queue? Add your name below:
-            </label>
-            <input
-              id="nameInput"
-              type={'text'}
-              onChange={(e) => this.handleFormChange(e)}
-            ></input>
-            <button className="submitBtn" type="submit">
-              Submit
-            </button>
-          </form>
+          {this.state.userAtFront !== false && this.state.adopted === false && (
+            <h3 className="statusMessage">You can now choose your new pet!</h3>
+          )}
+          {this.state.adopted !== false && (
+            <h3 className="statusMessage">Thank You for Adopting!</h3>
+          )}
+          {this.state.userWaiting !== false && (
+            <h2 className="statusMessage">Please Wait...</h2>
+          )}
+          {this.state.queueSubmit === false && (
+            <form className="queueForm" onSubmit={this.handleSubmit}>
+              <label htmlFor="nameInput">
+                Wanna join the queue? Add your name below:
+              </label>
+              <input
+                id="nameInput"
+                type={'text'}
+                onChange={(e) => this.handleFormChange(e)}
+              ></input>
+              <button className="submitBtn" type="submit">
+                Submit
+              </button>
+            </form>
+          )}
           <AdoptionQueue people={this.state.people} />
         </div>
       </section>

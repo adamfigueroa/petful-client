@@ -1,5 +1,26 @@
 # Petful Client
 
+**Link to live app: **
+
+# About Petful
+
+Petful is an app for a first in first out pet adoption agency. Users can join the queue and pick an available pet when their turn is up.
+
+# Screenshot
+
+
+
+# Technology used
+1. HTML as JSX
+2. CSS
+3. React.js
+
+To install locally
+- Clone the github repo to your machine.
+- Run 'npm install' in git
+- Run 'npm start'
+----------------------------------------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
