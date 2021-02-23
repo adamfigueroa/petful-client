@@ -5,21 +5,38 @@ import ApiService from '../Services/ApiService';
 import logo from '../Images/petful-icon.png';
 import './AdoptPage.css';
 
-const queueNames = [
-  'Greg McCoy',
-  'Lucy Boneparte',
-  'Jason Myerzonne',
-  'Edith Rose',
-  'Buddy the Elf',
-  'Harry Potter',
-  'Arnold Schwarzenegger',
-  'Sharon Stone',
-  'Rachel Ticotin',
-  'Linda Hamilton',
-  'Edward Furlong',
-  'Robert Patrick',
-  'Joe Morton',
-  'Alicia Vikander',
+const queueFirstNames = [
+  'Greg',
+  'Lucy',
+  'Jason',
+  'Edith',
+  'Buddy',
+  'Harry',
+  'Arnold',
+  'Sharon',
+  'Rachel',
+  'Linda',
+  'Edward',
+  'Robert',
+  'Joe',
+  'Alicia',
+];
+
+const queueLastNames = [
+  'McCoy',
+  'Boneparte',
+  'Myerzonne',
+  'Rose',
+  'the Elf',
+  'Potter',
+  'Schwarzenegger',
+  'Stone',
+  'Ticotin',
+  'Hamilton',
+  'Furlong',
+  'Patrick',
+  'Morton',
+  'Vikander',
 ];
 
 class AdoptPage extends Component {
@@ -165,9 +182,11 @@ class AdoptPage extends Component {
 
   populateQueue = () => {
     this.interval = setInterval(() => {
-      let populateUsers =
-        queueNames[Math.floor(Math.random() * queueNames.length)];
-      ApiService.queueUser(`${populateUsers}`).then(() => {
+      let populateUserFirst =
+        queueFirstNames[Math.floor(Math.random() * queueFirstNames.length)];
+      let populateUserLast =
+        queueLastNames[Math.floor(Math.random() * queueLastNames.length)];
+      ApiService.queueUser(`${populateUserFirst} ${populateUserLast}`).then(() => {
         ApiService.getPeople()
           .then((people) => {
             this.setState({ people });
