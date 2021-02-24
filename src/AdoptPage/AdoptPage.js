@@ -172,6 +172,7 @@ class AdoptPage extends Component {
               this.setState({ people });
               if (people[0] === this.state.newUser) {
                 clearInterval(this.interval);
+                this.setState({ userAtFront: true, userWaiting: false })
                 this.populateQueue();
               }
             })
@@ -192,12 +193,12 @@ class AdoptPage extends Component {
             this.setState({ people });
             if (people.length === 5) {
               clearInterval(this.interval);
-              this.setState({ userAtFront: true, userWaiting: false });
+              // this.setState({ userAtFront: true, userWaiting: false });
             }
           })
           .catch((error) => this.setState({ error }));
       });
-    }, 5000);
+    }, 4000);
   };
 
   handleFormChange = (e) => {

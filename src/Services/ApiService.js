@@ -43,13 +43,6 @@ const ApiService = {
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({ name: name }),
     })
-      // .then((res) => {
-      //   if (!res.ok) {
-      //     return res.json().then((e) => Promise.reject(e));
-      //   } else {
-      //     return res.json();
-      //   }
-      // })
       .catch((error) => console.error(error));
   },
 
@@ -58,13 +51,6 @@ const ApiService = {
       method: 'DELETE',
       headers: { 'content-type': 'application/json' },
     })
-      // .then((res) => {
-      //   if (!res.ok) {
-      //     return res.json().then((e) => Promise.reject(e));
-      //   } else {
-      //     return res.json();
-      //   }
-      // })
       .catch((error) => console.error(error));
   },
 
@@ -73,13 +59,6 @@ const ApiService = {
       method: 'DELETE',
       headers: { 'content-type': 'application/json' },
     })
-      // .then((res) => {
-      //   if (!res.ok) {
-      //     return res.json().then((e) => Promise.reject(e));
-      //   } else {
-      //     return res.json();
-      //   }
-      // })
       .catch((error) => console.error(error));
   },
 
@@ -88,13 +67,6 @@ const ApiService = {
       method: 'DELETE',
       headers: { 'content-type': 'application/json' },
     })
-      // .then((res) => {
-      //   if (!res.ok) {
-      //     return res.json().then((e) => Promise.reject(e));
-      //   } else {
-      //     return res.json();
-      //   }
-      // })
       .catch((error) => console.error(error));
   },
 };
